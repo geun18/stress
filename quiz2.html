@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>중복 선택 클릭</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('quiz2.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .click-area {
+      position: absolute;
+      width: 270px;
+      height: 100px;
+      cursor: pointer;
+      border-radius: 20px;
+      /* border: 2px dashed red; */
+      transition: all 0.3s ease;
+    }
+
+    .active {
+      border: 3px solid limegreen;
+      background-color: rgba(0, 255, 0, 0.2);
+    }
+    .click0 { top: 15%; left: 85%; transform: translate(-50%, -50%); }
+    .click1 { top: 39.5%; left: 21.8%; transform: translate(-50%, -50%); }
+    .click2 { top: 39.1%; left: 49.7%; transform: translate(-50%, -50%); }
+    .click3 { top: 39.5%; left: 78.3%; transform: translate(-50%, -50%); }
+    .click4 { top: 57%; left: 21.8%; transform: translate(-50%, -50%); }
+    .click5 { top: 57%; left: 49.7%; transform: translate(-50%, -50%); }
+    .click6 { top: 57%; left: 78.3%; transform: translate(-50%, -50%); }
+    .click7 { top: 74%; left: 21.8%; transform: translate(-50%, -50%); }
+    .click8 { top: 74%; left: 49.7%; transform: translate(-50%, -50%); }
+    .click9 { top: 74%; left: 78.3%; transform: translate(-50%, -50%); }
+  </style>
+</head>
+<body>
+
+<div class="click-area click1" onclick="toggleSelect(this)"></div>
+<div class="click-area click2" onclick="toggleSelect(this)"></div>
+<div class="click-area click3" onclick="toggleSelect(this)"></div>
+<div class="click-area click4" onclick="toggleSelect(this)"></div>
+<div class="click-area click5" onclick="toggleSelect(this)"></div>
+<div class="click-area click6" onclick="toggleSelect(this)"></div>
+<div class="click-area click7" onclick="toggleSelect(this)"></div>
+<div class="click-area click8" onclick="toggleSelect(this)"></div>
+<div class="click-area click9" onclick="toggleSelect(this)"></div>
+
+<div class="click-area click0" onclick="location.href='quiz3.html'"></div>
+
+<script>
+  function toggleSelect(element) {
+    element.classList.toggle('active'); // 클릭할 때마다 토글됨
+  }
+</script>
+
+</body>
+</html>

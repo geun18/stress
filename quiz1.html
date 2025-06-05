@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스트레스 대탈출</title>
+    <style>
+        body {
+          margin: 0;
+          background: url('quiz1.jpg') no-repeat center center;
+          background-size: cover;
+          height: 100vh;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .click-area {
+          position: absolute;
+          width: 280px;
+          height: 100px;
+          cursor: pointer;
+          /* border: 2px dashed red; */  /* 개발 중 위치 확인용 */
+        }
+
+        .click1 {
+          top: 79.5%;
+          left: 35.5%;
+          transform: translate(-50%, -50%);
+        }
+
+        .click2 {
+          top: 79.5%;
+          left: 64.5%;
+          transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+<!-- 첫 번째 클릭 영역 -->
+<div class="click-area click1" onclick="location.href='quiz2.html'"></div>
+
+<!-- 두 번째 클릭 영역 -->
+<div class="click-area click2" onclick="location.href='quiz2.html'"></div>
+
+</body>
+</html>
